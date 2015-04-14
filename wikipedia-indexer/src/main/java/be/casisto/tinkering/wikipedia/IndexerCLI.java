@@ -244,7 +244,7 @@ public class IndexerCLI {
 	private void help() {
 		HelpFormatter formatter = new HelpFormatter();
 
-		formatter.printHelp("Main", options);
+		formatter.printHelp("IndexerCLI", options);
 		System.exit(0);
 	}
 
