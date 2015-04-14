@@ -1,0 +1,50 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="0.10" xml:lang="en">
+	<siteinfo>
+		<sitename>Wikipedia</sitename>
+		<dbname>tstwiki</dbname>
+	</siteinfo>
+	<page>
+		<title>Page 1</title>
+		<revision>
+			<text xml:space="preserve">
+Bla bla bla
+[[Page 2]]
+Bla bla bla 
+[[Page 3]]
+Bla bla bla
+      		</text>
+		</revision>
+	</page>
+	<page>
+		<title>Page 2</title>
+		<revision>
+			<text xml:space="preserve">
+Bla bla bla
+[[Page 1]]
+Bla bla bla 
+[[Page 3]]
+Bla bla bla
+      		</text>
+		</revision>
+	</page>
+	<page>
+		<title>Page 3</title>
+		<revision>
+			<text xml:space="preserve">
+Bla bla bla
+[[Page 4]]
+Bla bla bla 
+      		</text>
+		</revision>
+	</page>
+	<page>
+		<title>Page 4</title>
+		<revision>
+			<text xml:space="preserve">
+Bla bla bla
+      		</text>
+		</revision>
+	</page>
+</mediawiki>
