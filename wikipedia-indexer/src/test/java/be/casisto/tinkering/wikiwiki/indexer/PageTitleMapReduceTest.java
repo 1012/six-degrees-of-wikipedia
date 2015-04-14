@@ -32,8 +32,8 @@ public class PageTitleMapReduceTest {
 
 		driver.withInput(new LongWritable(1), new Text("Page1\tPage 2,Page 3"));
 
-		driver.withOutput(new Text("Page 2"), new Text("1.4250001"));
-		driver.withOutput(new Text("Page 3"), new Text("1.4250001"));
+		driver.withOutput(new Text("Page 2"), new Text(""));
+		driver.withOutput(new Text("Page 3"), new Text(""));
 
 		driver.runTest();
 

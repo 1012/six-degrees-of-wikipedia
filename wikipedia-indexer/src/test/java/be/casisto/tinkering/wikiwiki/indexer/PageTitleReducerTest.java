@@ -29,8 +29,8 @@ public class PageTitleReducerTest {
 		reduceDriver.withInput(new Text("Page 2"), values);
 		reduceDriver.withInput(new Text("Page 3"), values);
 
-		reduceDriver.withOutput(new Text("Page 2"), new Text("1.4250001"));
-		reduceDriver.withOutput(new Text("Page 3"), new Text("1.4250001"));
+		reduceDriver.withOutput(new Text("Page 2"), new Text(""));
+		reduceDriver.withOutput(new Text("Page 3"), new Text(""));
 
 		reduceDriver.runTest();
 	}

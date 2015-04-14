@@ -26,6 +26,7 @@ Bla bla bla
 Bla bla bla 
 [[Page 3]]
 Bla bla bla
+[[Page 5]]
       		</text>
 		</revision>
 	</page>
@@ -36,11 +37,30 @@ Bla bla bla
 Bla bla bla
 [[Page 4]]
 Bla bla bla 
+[[Page 6]]
       		</text>
 		</revision>
 	</page>
 	<page>
 		<title>Page 4</title>
+		<revision>
+			<text xml:space="preserve">
+Bla bla bla
+      		</text>
+		</revision>
+	</page>
+		<page>
+		<title>Page 5</title>
+		<revision>
+			<text xml:space="preserve">
+Bla bla bla
+[[Page 6]]
+Bla bla bla
+      		</text>
+		</revision>
+	</page>
+	<page>
+		<title>Page 6</title>
 		<revision>
 			<text xml:space="preserve">
 Bla bla bla
