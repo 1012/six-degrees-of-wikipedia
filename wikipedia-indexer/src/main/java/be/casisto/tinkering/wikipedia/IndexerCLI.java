@@ -134,7 +134,7 @@ public class IndexerCLI {
 				config.set("fs.defaultFS", "hdfs://localhost:9000");
 
 		} catch (ParseException e) {
-			log.error("Failed to parse command-line", e);
+			log.error("Failed to parse command-line!", e);
 			help();
 		}
 	}
