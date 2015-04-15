@@ -41,10 +41,12 @@ public class IndexerCLI {
 	 * Main method for the IndexerCLI.
 	 * 
 	 * -c,--cleanup Cleanup HDFS after run by deleting the input, pages and
-	 * links files for this iteration. -f,--hdfs <arg> Hadoop file system url.
+	 * links files for this iteration. 
+	 * -f,--hdfs <arg> Hadoop file system url.
 	 * Default is local hdfs with default port (hdfs://localhost:9000).
-	 * -h,--help Show this. -i,--input <arg> The unzipped wikipedia xml to
-	 * index. -o,--output <arg> The output destination for the index files
+	 * -h,--help Show this. 
+	 * -i,--input <arg> The unzipped wikipedia xml to index. 
+	 * -o,--output <arg> The output destination for the index files
 	 * -t,--tracker <arg> Hadoop job tracker url. Default is local hadoop with
 	 * default port (localhost:9010).
 	 *
@@ -58,7 +60,7 @@ public class IndexerCLI {
 	}
 
 	/**
-	 * Default constructor responsible for initialising the command-line parser.
+	 * Default constructor responsible for initializing the command-line parser.
 	 * 
 	 * @param args
 	 *            command-line arguments
@@ -144,7 +146,10 @@ public class IndexerCLI {
 	 */
 	private void run() {
 
-		String iteration = Long.toString(System.currentTimeMillis());
+		long prev = System.currentTimeMillis();
+		long time = prev;
+		
+		String iteration = Long.toString(time);
 		String input = "wiki/input/input-" + iteration + ".txt";
 		String links = "wiki/links/links-index-" + iteration;
 		String pages = "wiki/pages/pages-index-" + iteration;
@@ -156,6 +161,10 @@ public class IndexerCLI {
 			fs = FileSystem.get(config);
 			this.upload(inputFile, input);
 
+			time = System.currentTimeMillis();
+			log.info("Uploaded archive in {} seconds", (time - prev) / 1000);
+			prev = time;
+			
 			log.info("Running the indexer");
 			config.set("wiki.indexer.input",
 					input.substring(0, input.lastIndexOf("/")));
@@ -163,6 +172,10 @@ public class IndexerCLI {
 			config.set("wiki.indexer.pages", pages);
 			int res = ToolRunner.run(config, new IndexerTool(), args);
 
+			time = System.currentTimeMillis();
+			log.info("Hadoop jobs finished in {} seconds", (time - prev) / 1000);
+			prev = time;
+			
 			if (res == 0)
 				log.info("Indexer jobs finished successfully");
 			else
@@ -175,11 +188,19 @@ public class IndexerCLI {
 			this.download(links + "/part-r-00000", outputDir + "/links-index-"
 					+ iteration + ".txt");
 
+			time = System.currentTimeMillis();
+			log.info("Download of index files finished in {} seconds", (time - prev) / 1000);
+			prev = time;
+			
 			if (cleanup) {
 				log.info("Cleanup required. Deleting input, pages and links files from HDFS.");
 				this.delete(input, false);
 				this.delete(pages, true);
 				this.delete(links, true);
+				
+				time = System.currentTimeMillis();
+				log.info("Cleanup finished in {} seconds", (time - prev) / 1000);
+				prev = time;
 			}
 
 		} catch (Exception e) {

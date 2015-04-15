@@ -1,0 +1,14 @@
+<page>
+<title>Page 1</title>
+<revision>
+<text xml:space="preserve">
+Bla bla bla
+[[Page 2]]
+Bla bla bla
+[[Page 2]]
+Bla bla bla 
+[[Page 3]]
+Bla bla bla
+</text>
+</revision>
+</page>
