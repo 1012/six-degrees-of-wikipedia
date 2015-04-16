@@ -1,0 +1,50 @@
+INFO  2015-04-16 10:46:56,413 GrapherCLI - Initializing Wikipedia grapher be.casisto.tinkering.wikipedia.graph.OrientDBGrapher
+INFO  2015-04-16 10:46:56,418 GrapherCLI - Connecting to the graph database with url remote:/localhost/afwiki
+INFO  2015-04-16 10:46:57,127 GrapherCLI - Loading page titles from /Volumes/JIRI-USB/afwiki-index/pages-index-1429107889585.txt as vertices
+INFO  2015-04-16 10:47:03,134 OrientDBGrapher - Processed 25000 page vertices
+INFO  2015-04-16 10:47:08,076 OrientDBGrapher - Processed 50000 page vertices
+INFO  2015-04-16 10:47:13,136 OrientDBGrapher - Processed 75000 page vertices
+INFO  2015-04-16 10:47:18,242 OrientDBGrapher - Processed 100000 page vertices
+INFO  2015-04-16 10:47:23,312 OrientDBGrapher - Processed 125000 page vertices
+INFO  2015-04-16 10:47:28,530 OrientDBGrapher - Processed 150000 page vertices
+INFO  2015-04-16 10:47:33,735 OrientDBGrapher - Processed 175000 page vertices
+INFO  2015-04-16 10:47:38,139 OrientDBGrapher - Processed a total of 196874 page vertices
+INFO  2015-04-16 10:47:38,139 GrapherCLI - loading page links from /Volumes/JIRI-USB/afwiki-index/links-index-1429107889585.txt as edges
+INFO  2015-04-16 10:48:08,442 OrientDBGrapher - Processed 25000 page edges
+INFO  2015-04-16 10:48:36,256 OrientDBGrapher - Processed 50000 page edges
+INFO  2015-04-16 10:49:04,978 OrientDBGrapher - Processed 75000 page edges
+INFO  2015-04-16 10:49:32,205 OrientDBGrapher - Processed 100000 page edges
+INFO  2015-04-16 10:50:00,911 OrientDBGrapher - Processed 125000 page edges
+INFO  2015-04-16 10:50:31,077 OrientDBGrapher - Processed 150000 page edges
+INFO  2015-04-16 10:51:01,381 OrientDBGrapher - Processed 175000 page edges
+INFO  2015-04-16 10:51:31,361 OrientDBGrapher - Processed 200000 page edges
+INFO  2015-04-16 10:52:02,352 OrientDBGrapher - Processed 225000 page edges
+INFO  2015-04-16 10:52:31,818 OrientDBGrapher - Processed 250000 page edges
+INFO  2015-04-16 10:53:01,737 OrientDBGrapher - Processed 275000 page edges
+INFO  2015-04-16 10:53:31,222 OrientDBGrapher - Processed 300000 page edges
+INFO  2015-04-16 10:54:00,598 OrientDBGrapher - Processed 325000 page edges
+INFO  2015-04-16 10:54:29,100 OrientDBGrapher - Processed 350000 page edges
+INFO  2015-04-16 10:55:00,219 OrientDBGrapher - Processed 375000 page edges
+INFO  2015-04-16 10:55:30,463 OrientDBGrapher - Processed 400000 page edges
+INFO  2015-04-16 10:56:00,341 OrientDBGrapher - Processed 425000 page edges
+INFO  2015-04-16 10:56:30,075 OrientDBGrapher - Processed 450000 page edges
+INFO  2015-04-16 10:56:59,988 OrientDBGrapher - Processed 475000 page edges
+INFO  2015-04-16 10:57:29,705 OrientDBGrapher - Processed 500000 page edges
+INFO  2015-04-16 10:57:59,025 OrientDBGrapher - Processed 525000 page edges
+INFO  2015-04-16 10:58:31,554 OrientDBGrapher - Processed 550000 page edges
+INFO  2015-04-16 10:59:02,744 OrientDBGrapher - Processed 575000 page edges
+INFO  2015-04-16 10:59:32,382 OrientDBGrapher - Processed 600000 page edges
+INFO  2015-04-16 11:00:01,865 OrientDBGrapher - Processed 625000 page edges
+INFO  2015-04-16 11:00:32,082 OrientDBGrapher - Processed 650000 page edges
+INFO  2015-04-16 11:01:01,518 OrientDBGrapher - Processed 675000 page edges
+INFO  2015-04-16 11:01:30,100 OrientDBGrapher - Processed 700000 page edges
+INFO  2015-04-16 11:02:01,017 OrientDBGrapher - Processed 725000 page edges
+INFO  2015-04-16 11:02:31,079 OrientDBGrapher - Processed 750000 page edges
+INFO  2015-04-16 11:03:00,771 OrientDBGrapher - Processed 775000 page edges
+INFO  2015-04-16 11:03:31,615 OrientDBGrapher - Processed 800000 page edges
+INFO  2015-04-16 11:04:01,419 OrientDBGrapher - Processed 825000 page edges
+INFO  2015-04-16 11:04:31,361 OrientDBGrapher - Processed 850000 page edges
+INFO  2015-04-16 11:05:00,864 OrientDBGrapher - Processed 875000 page edges
+INFO  2015-04-16 11:05:28,368 OrientDBGrapher - Processed a total of 898308 page edges
+INFO  2015-04-16 11:05:28,368 GrapherCLI - Disconnecting from the graph database
+INFO  2015-04-16 11:05:28,368 OrientDBGrapher - Closing database connection.
